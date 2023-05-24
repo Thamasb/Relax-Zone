@@ -1,0 +1,449 @@
+/* Import from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Qahiri&family=Raleway:wght@500&display=swap');
+
+/* Change default margin, padding and border to 0 and none */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Style default body */
+body {
+    font-family: Raleway, sans-serif;
+    color: #133944;
+}
+
+/* Style the page content to fill the screen for the footer to stick to the bottom */
+#content-wrapper {
+    min-height: calc(100vh - 200px);
+}
+
+/* Style headings and logo */
+h1, h2, h3 {
+    font-family: Cabin, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #454720;
+}
+
+h2 {
+    font-size: 250%;
+    margin: 40px 10px;
+}
+
+/* Style header */
+
+header {
+    background-color: #e2ecba;
+}
+
+/* Style logo */
+
+.logo-font {
+    font-family: Qahiri, sans-serif;
+    font-weight: 400;
+}
+
+#main-logo {
+    float: left;
+    font-size: 350%;
+    margin: 40px 30px;
+}
+
+/* Style navigation bar */
+#navbar {
+    clear: left;
+    font-size: 120%;
+    bottom: 0;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+}
+
+#navbar a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #e2ecba;
+    background-color: #454720;
+    padding: 10px;
+}
+
+#navbar a:hover {
+    background-color: #784834;
+}
+
+/* index.html image container section */
+.banner-image {
+    height: 450px;
+}
+
+/* Main image */
+#main-image {
+    height: 100%;
+    background: url("../images/main-image.jpg") center center / cover no-repeat;
+}
+
+.section-wrapper {
+    overflow: auto;
+    display: flex;
+}
+
+/* About us section*/
+#about-us {
+    float: left;
+    width: 66%;
+    flex-grow: 1;
+}
+
+#about-us h2 {
+    text-align: center;
+}
+
+#about-us p {
+    margin: auto 10%;
+    line-height: 20px;
+    text-align: justify;
+}
+
+#about-us-image {
+    position: relative;
+    margin: 40px 10% 0;
+    overflow: hidden;
+}
+
+#about-us-image img {
+    max-width: 100%;
+}
+
+/* Contact section */
+#contact {
+    float: right;
+    width: 33%;
+    background-color: #e2ecba;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact h3 {
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+#contact p {
+    text-align: justify;
+    margin: auto 10%;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+#contact span {
+    padding-left: 16px;
+}
+
+/* Style footer */
+
+footer {
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    height: 200px;
+    background-color: #454720;
+}
+
+footer > p {
+    clear: both;
+    color: #e2ecba40;
+    text-align: center;
+    bottom: 0;
+}
+
+#footer-logo {
+    position: absolute;
+    margin: 75px 30px 0;
+    color: #e2ecba;
+}
+
+.social-icons {
+    float: right;
+    margin: 75px 30px 0;
+}
+
+.social-icons li {
+    display: inline;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    margin: 2px;
+    padding: 6px;
+    color: #e2ecba;
+}
+
+/* Style treatments.html */
+.treatment-section {
+    position: relative;
+    height: 450px;
+}
+
+.treatment-heading {
+    position: absolute;
+    display: inline-block;
+    height: 450px;
+}
+
+.treatment-heading h2 {
+    text-align: center;
+}
+
+.treatment-heading p {
+    padding: 0 10%;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.book-button {
+    display: block;
+    width: max-content;
+    font-size: 120%;
+    margin: 30px auto;
+    padding: 10px;
+    text-decoration: none;
+    color: #e2ecba;
+    background-color: #454720;
+}
+
+.book-button:hover {
+    background-color: #784834;
+}
+
+.treatment-image {
+    position: absolute;
+    height: 450px;
+}
+
+.right-treatment-heading {
+    left: 66%;
+    width: 33%;
+}
+
+.left-treatment-image {
+    width: 66%;
+}
+
+.left-treatment-heading {
+    left: 0;
+    width: 33%;
+}
+
+.right-treatment-image {
+    left: 33%;
+    width: 66%;
+}
+
+#massage-image {
+    background: url(../images/massage-image.jpg) center center / cover no-repeat;
+}
+
+#facial-image {
+    background: url(../images/facial-image.jpg) center center / cover no-repeat;
+}
+
+#pedicure-image {
+    background: url(../images/pedicure-image.jpg) center center / cover no-repeat;
+}
+
+/* Style form in book-now.html */
+#book-now-image {
+    height: 100%;
+    background: url("../images/book-now-image.jpg") center center / cover no-repeat;
+}
+
+#form-section {
+    float: left;
+    width: 33%;
+    text-align: left;
+    background-color: #e2ecba;
+    flex-grow: 1;
+}
+
+#form-section h2 {
+    text-align: center;
+}
+
+#form-section form {
+    padding: 0 15%;
+}
+
+.form-input {
+    display: block;
+    border: 1px solid #133944;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#choose-treatment {
+    margin-bottom: 15px;
+}
+
+/* Style find us section */
+
+#find-us-section {
+    float: right;
+    width: 66%;
+    flex-grow: 1;
+}
+
+#find-us-section h2 {
+    text-align: center;
+}
+
+/* Style map */
+
+#map {
+    text-align: center;
+}
+
+#map iframe{
+    width: 80%;
+    height: 450px;
+}
+
+/* Style 404 error page */
+
+#background-404 {
+    background: url("../images/404-background.jpg") center bottom / cover no-repeat;
+    height: 100vh;
+}
+
+#text-404 {
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#text-404 h1 {
+    margin: 40px 10px;
+    font-size: 350%;
+}
+
+#text-404 p {
+    line-height: 25px;
+    font-size: 125%;
+}
+
+#text-404 a {
+    text-decoration: none;
+    color: #454720;
+    
+}
+
+#text-404 a:hover {
+    font-size: 120%;
+}
+
+/* Style medium screen sizes from 1200px wide and down */
+
+@media screen and (max-width: 1200px) {
+
+    .treatment-section {
+        position: relative;
+        display: inline;
+    }
+
+    .treatment-heading {
+        position: relative;
+        width: 100%;
+        left: 0;
+        height: fit-content;
+    }
+
+    .treatment-image {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    }
+
+    /* Style medium screen sizes from 1000px wide and down */
+
+@media screen and (max-width: 1000px) {
+
+    #navbar li {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #about-us {
+        width: 100%;
+    }
+
+    #contact {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    #form-section {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    #find-us-section {
+        width: 100%;
+    }
+
+    .section-wrapper {
+        display: block;
+    }
+
+}
+
+    /* Style small screen sizes from 425px wide and down */
+
+    @media screen and (max-width: 425px) {
+
+        #footer-logo {
+            width: 100%;
+            text-align: center;
+            margin: 50px 0;
+            display: block;
+        }
+
+        .social-icons {
+            text-align: center;
+            width: 100%;
+            margin: 100px 0;
+        }
+
+        footer > p {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            bottom: 20px;
+        }
+
+        .banner-image {
+            height: 300px;
+        }
+
+        .treatment-image {
+            height: 300px;
+        }
+
+        #map iframe{
+            height: 300px;
+        }
+    }
